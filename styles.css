@@ -13,3 +13,9 @@
     padding: 0%;
     font-family: 'Poppins', sans-serif;;
 }
+
+
+.footer-div {
+    background:#91A88C;
+    display: flexbox;
+}
