@@ -33,11 +33,18 @@ body{
     margin-top: 0.5rem;
     width: 3rem;
 }
+.introContainer{
+    display: flex;
+    max-width: 800px;
+
+    justify-content: center;
+}
 .intro{
     display: flex;
     position: absolute;
     top: 10vh;
-    width: 100vw;
+
+   width: 800px;
     justify-content: space-evenly;
 }
 
