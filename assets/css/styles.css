@@ -83,6 +83,7 @@ body{
     flex-direction: column;
     position: absolute;
     top: 79vh;
+    margin-top:20px;
     justify-content: center;
     width: 100vw;
     height: 4rem;
@@ -116,6 +117,7 @@ body{
 /* call to action btn */
 .register-btn{
     cursor: pointer;
+    margin-top: 35px;
     background-color: var(--offWhite);
     padding: 0.5rem;
     font-size: 1.5rem;
@@ -136,37 +138,104 @@ body{
     width: 100vw;
 }
 /*footer-section*/
-.footer-section{
-    margin-top:100px;
-    
+.footer-section{  
+    background: #DBE8D9; 
+    margin-top: 100px;
+    width: 100vw;
 }
 .footer{
     margin-top:15px;
     width: 100vw;
-    height:300px;
+    height:fit-content;
     background:#DBE8D9;
+    padding: 35px 0 10px;
+    overflow: hidden;
 }
-.container-flex{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: flex;
-    flex-wrap: row wrap;
-    margin-top: 30px;
+.container{
     width: 100vw;
-    height: auto;
+	margin:auto;
+    overflow-y: hidden;
 }
-.round-img{
-    border-radius: 50%;
-    height:120px;
-    width: 120px;
+.row{
+	display: flex;
+	flex-wrap: wrap;
 }
-.footer-text{
-    color:#B53A25;
-    margin-top:5px;
+ul{
+	list-style: none;
 }
-.footer-links{
-    text-decoration: none;
-    list-style: none;
-    margin-top:5px;
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color:#B53A25;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: bold;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: black;
+	text-decoration: none;
+	font-weight: 400;
+	color: #677662;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color:#F74700;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	background-color: #F74700;
+	margin:0 8px 8px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	background-color: #e91e63;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.footer-last{
+    color:#2B3531;
+}
+.footer-logo{
+    display: flex;
+    width:100%;
+    position: relative;
 }
