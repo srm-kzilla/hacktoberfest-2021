@@ -1,4 +1,3 @@
-
 :root{
     --brightOrange : #F74700;
     --darkOrange : #B53A25;
@@ -14,12 +13,14 @@
     padding: 0%;
     font-family: 'Poppins', sans-serif;;
 }
+
 body{
     background-color: var(--offWhite);
 }
 .landing-page{
     height: 100vh;
 }
+
 
 /* navbar  */
 .nav{
@@ -82,7 +83,7 @@ body{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 79vh;
+    top: 72vh;
     margin-top:20px;
     justify-content: center;
     width: 100vw;
@@ -133,14 +134,43 @@ body{
 .callToAction{
     display: flex;
     position: absolute;
-    top: 89vh;
+    top: 80vh;
     justify-content: center;
     width: 100vw;
 }
+/*info page*/
+.info-page{
+    margin-top: 5rem;
+    height: 100vh;
+    padding: 0.5rem;
+   
+    background-color: var(--lightGreen);
+}
+.info{
+    display: flex;
+    padding-top: 2rem;
+    text-align: center;
+
+}
+.info-1{
+    color: var(--darkOrange);
+    margin-top: 10rem;
+   
+}
+.info-2{
+    color: var(--offWhite);
+}
+/*form*/
+.form-page{
+
+    height: 100vh;
+    background-color: var(--darkOrange);
+}
+
 /*footer-section*/
 .footer-section{  
     background: #DBE8D9; 
-    margin-top: 100px;
+    
     width: 100vw;
 }
 .footer{
