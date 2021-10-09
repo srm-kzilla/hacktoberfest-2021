@@ -21,7 +21,6 @@ body{
     height: 100vh;
 }
 
-
 /* navbar  */
 .nav{
     position: absolute;
@@ -31,6 +30,7 @@ body{
 
 }
 .nav img{
+    margin-top: 0.5rem;
     width: 3rem;
 }
 .intro{
@@ -38,7 +38,7 @@ body{
     position: absolute;
     top: 10vh;
     width: 100vw;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 /* intro (kzilla celebrated) */
@@ -49,32 +49,52 @@ body{
     font-weight: 500;
     color: var(--lightGreen);
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
     .intro img {
         width: 4rem;
     }
+    .intro{
+        top: 7vh;
+    }
+
   }
 
 /* main- logo+ descrp */
 .main {
     position: absolute;
-    top: 25vh;
-    width: 95vw;
-    margin: 0px 0.5rem 0rem 1rem;
+    top: 20vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+   
 }
 .main p{
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
     color: var(--brightOrange);
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 .main img{
-    width: 500px;
+    display: flex;
+    justify-content: center;
+    width: 400px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
     .main img{
-        width: 300px;
+        width: 270px;
+    }
+    .main{
+        top:15vh;
+    }
+    
+    
+}
+@media only screen and (max-width: 450px){
+    .main p{
+        font-size: 0.75rem;
     }
 }
 
@@ -83,7 +103,7 @@ body{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 72vh;
+    top: 73vh;
     margin-top:20px;
     justify-content: center;
     width: 100vw;
@@ -92,49 +112,92 @@ body{
 #presentedBy{
     color: var(--lightGreen);
     margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
 
 }
 .sponsers{
     display: flex;
+    background-color: var(--darkestGreen);
+    border-bottom-right-radius: 2.5rem;
+    padding: 1rem;
 
-    width: 100vw;
+    margin-bottom: 3rem;
+    width: 70vw;
 }
 .sponsers img{
-    width: 163px;
+    width: 130px;
+    margin-top: 0.75rem;
+   
 }
 #intel{
-    width: 68px;
+    width: 60px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
+    .nav img{
+        width: 1.5rem;
+    }
+    .nav {
+        height: 2rem;
+    }
     .sponsers img{
-        width: 90px;
+        width: 80px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
 
     }
     #intel{
-        width: 40px; 
+        width: 35px; 
+    }
+    h2{
+        font-size: 1.05rem;
+    }
+    .main p{
+        margin-top: 1rem;
+    }
+    .sponsers {
+        width: 300px;
+    }
+    .sponsers #deepsource{
+        padding-right: 1rem;
+
+    }
+    #presentedBy{
+        font-size: 0.95rem;
     }
   }
+@media only screen and (max-height: 690px) {
+  .main img{
+      width: 270px;
+  }
+}
+
 
 /* call to action btn */
 .register-btn{
     cursor: pointer;
     margin-top: 35px;
-    background-color: var(--offWhite);
+    background-color: var(--brightOrange);
     padding: 0.5rem;
     font-size: 1.5rem;
-    box-shadow: -3px 5px var(--brightOrange);
-    border: 3px solid var(--lightGreen);
-    color: var(--darkestGreen);
+    border: none;
+    border-radius: 2rem ;
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    
+    display: flex;
+    justify-content: center;
+    color: var(--offWhite);
     font-size: 2rem;
+    transition: box-shadow .3s;
 }
 .register-btn:hover{
-    background-color: var(--lightGreen);
-    color: var(--brightOrange) ;
+    box-shadow:  10px 10px 20px  rgba(33,33,33,.2); 
 }
 .callToAction{
     display: flex;
     position: absolute;
-    top: 80vh;
+    top: 85vh;
     justify-content: center;
     width: 100vw;
 }
@@ -154,18 +217,37 @@ body{
 }
 .info-1{
     color: var(--darkOrange);
-    margin-top: 10rem;
+    margin-top: 5rem;
    
 }
 .info-2{
     color: var(--offWhite);
 }
+.info p{
+    max-width: 300px;
+}
+@media only screen and (max-width: 768px){
+    .info-1{
+        margin-top: 0rem;
+    }
+    .info-2{
+        margin-bottom:1rem;
+    }
+    
+}
+@media only screen and (max-width: 670px){
+    .info{
+        flex-direction: column;
+        font-size: 0.75rem;
+    }
+}
 /*form*/
 .form-page{
 
     height: 100vh;
-    background-color: var(--darkOrange);
+    background-color: var(--brown);
 }
+
 
 /*footer-section*/
 .footer-section{  
