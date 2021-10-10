@@ -1,131 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="SRMKZILLA Celebrates Hacktoberfest 2021 - the month long celebration of open source software! ">
+    <meta name="description"
+        content="SRMKZILLA Celebrates Hacktoberfest 2021 - the month long celebration of open source software! ">
     <meta name="keywords" content="SRMKZILLA, Hacktoberfest , Open Source">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- fonts -->
-    <link rel="icon" href="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hf-icon.6b4a329.svg" type="image/gif" sizes="16x16">
+    <link rel="icon" href="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hf-icon.6b4a329.svg" type="image/gif"
+        sizes="16x16">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- stylesheets -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Hacktoberfest with SRMKZILLA</title>
 </head>
-<body style="overflow-x:hidden;">
-    <section class="landing-page">
 
-        <div class="nav">
-            <a  id="kzillaLogo" href="https://www.srmkzilla.net/" target="_blank" rel="noopener noreferrer"><img src="https://avatars.githubusercontent.com/u/50284029?s=200&v=4" alt="srmkzilla"></a>
-            <a id="hacktoberfestLogo" href="https://hacktoberfest.digitalocean.com/" target="_blank" rel="noopener noreferrer"><img src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hf-icon.6b4a329.svg" alt="logo-hf-icon"></a>
-            
-        </div>
-        
+<body>
+    <nav>
+        <a href="https://www.srmkzilla.net/" target="_blank" rel="noopener noreferrer">
+            <img src="https://avatars.githubusercontent.com/u/50284029?s=200&v=4" alt="srmkzilla">
+        </a>
+        <a href="https://hacktoberfest.digitalocean.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/img/hacktoberfest-icon.svg" alt="hacktoberfest-icon">
+        </a>
+    </nav>
+
+    <section class="hero">
         <div class="introContainer">
-            <div class="intro">
-                <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/sign-up-accent-left.07ab168.svg" alt="flowers">
-                <h2>SRMKZILLA Celebrates</h2>
-                <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/sign-up-accent-right.2faed05.svg" alt="flowers">
-            </div>
+            <figure>
+                <img src="./assets/img/hacktoberfest-flower-right.svg" alt="hacktoberfest-flowers">
+            </figure>
+            <h2>SRMKZILLA Celebrates</h2>
+            <figure>
+                <img src="./assets/img/hacktoberfest-flower-left.svg" alt="hacktoberfest-flowers">
+            </figure>
         </div>
-        <div class="main">
-            <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg" alt="logo-hacktoberfest-full">
-            <p>Welcoming you all to Hacktoberfest'21- the month long celebration of open source software! Embark your journey into the open source universe with SRMKZILLA by contributing to our repositories.</p>
+
+        <div class="banner">
+            <img src="./assets/img/hacktoberfest.svg" alt="hacktoberfest-2021">
+            <p>
+                Welcoming you all to Hacktoberfest'21- the month long celebration of open source software! Embark your
+                journey into the open source universe with SRMKZILLA by contributing to our repositories.
+            </p>
         </div>
-        
-        <div class="sponser-section">
+
+        <div class="sponsors">
+            <h3>Presented By</h3>
             <div>
-                <h3 id="presentedBy">Presented By</h3>
-            </div>
-            <div class="sponsers">
                 <a href="https://www.digitalocean.com/" target="_blank" rel="noopener noreferrer">
-                    <img id="digitalocean" src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-digitalocean-gr.f6faef2.svg" alt="Digital Ocean Sponser">
-                 </a>
+                    <img src="./assets/img/sponsors/digital-ocean.svg" alt="digital ocean">
+                </a>
                 <a href="https://hacktoberfest.appwrite.io/" target="_blank" rel="noopener noreferrer">
-                    <img id="appwrite" src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-appwrite-gr.1161116.svg" alt="appWrite Sponser"></a>
+                    <img src="./assets/img/sponsors/appwrite.svg" alt="appWrite"></a>
                 <a href="https://devmesh.intel.com" target="_blank" rel="noopener noreferrer">
-                    <img id="intel" src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-intel-gr.a510816.svg" alt="intel">
+                    <img id="intel" src="./assets/img/sponsors/intel.svg" alt="intel">
                 </a>
                 <a href="https://deepsource.io/hacktoberfest/" target="_blank" rel="noopener noreferrer">
-                    <img id="deepsource" src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-deepsource-gr.37aa9bc.svg" alt="deepsource">
+                    <img src="./assets/img/sponsors/deepsource.svg" alt="deepsource">
                 </a>
             </div>
+            <button onclick="scrollToForm()">Register</button>
         </div>
+    </section>
 
-        <div class="callToAction">
-            <button class="register-btn" onclick="scrollToForm()">Register</button>
+    <section class="info">
+        <div class="info-container">
+            <article>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, quibusdam
+                    error fugiat quasi ea molestiae, doloremque, cupiditate a pariatur quisquam tempore
+                    recusandae.
+                    Consectetur facilis beatae excepturi, nisi quod assumenda non?
+                </p>
+                <figure>
+                    <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/icon-calendar.b5f18e7.svg"
+                        alt="icon-calendar">
+                </figure>
+            </article>
+
+            <article>
+                <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/icon-speaker.946af61.svg" alt="icon-speaker">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, quibusdam error fugiat
+                    quasi ea
+                    molestiae, doloremque, cupiditate a pariatur quisquam tempore recusandae. Consectetur
+                    facilis
+                    beatae excepturi, nisi quod assumenda non?
+                </p>
+
+            </article>
         </div>
     </section>
-    <section class="info-page">
-        <div class="container-info">
-        
-            <div class="row">
-                <div class="footer-col">
-                    <p class="info-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, quibusdam error fugiat quasi ea molestiae, doloremque, cupiditate a pariatur quisquam tempore recusandae. Consectetur facilis beatae excepturi, nisi quod assumenda non?</p>
-                </div>
-                <div class="footer-col">
-                    <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/icon-calendar.b5f18e7.svg" alt="icon-calendar">
-                </div>
-            </div>
-        
-        
-            <div class="row second-info">
-                <div class="footer-col">
-                    <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/icon-speaker.946af61.svg" alt="icon-speaker">
-                </div>
-                <div class="footer-col">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, quibusdam error fugiat quasi ea molestiae, doloremque, cupiditate a pariatur quisquam tempore recusandae. Consectetur facilis beatae excepturi, nisi quod assumenda non?</p>
-                </div>
-            </div>
-            
-        </div>
-        
-    </section>
-    <section class="form-page">
+
+    <section class="form">
         <p>Form</p>
     </section>
-    <section class="footer-section">
-        <div class="container">
-        <div class="circle">
-            <center><img  src="assets/img/flower.svg" style="margin-top: 10px;"></center>
-        </div>
-        <footer>
-            <div class="footer">
-                    <div class="row">
-                        <div class="footer-col">
-                            <center><img src="assets/img/hacktoberfestH.svg" style="height:100px;"></center>
-                        </div>
-                        <div class="footer-col">
-                            <h4 class="footer-text">HACKTOBERFEST 2021</h4>
-                            <ul>
-                                <li><a href="#">Link-1</a></li>
-                                <li><a href="#">Link-2</a></li>
-                                <li><a href="#">Link-3</a></li>
-                                <li><a href="#">Link-4</a></li>
-                        </div>
-                        <div class="footer-col">
-                            <center><img src="assets/img/H-icon-dark.svg" style="height:100px;"></center>
-                        </div>
-                        <div class="footer-col">
-                            <h4 class="footer-text">SRMKZILLA</h4>
-                            <ul>
-                                <li><a href="#">Link-1</a></li>
-                                <li><a href="#">Link-2</a></li>
-                                <li><a href="#">Link-3</a></li>
-                                <li><a href="#">Link-4</a></li>
-                                <li style="margin-top:40px;"><span class="footer-last">Crafted with ❤ by srmkzilla</span></li>
-                            </ul>
-                            
-                        </div>
-                </div>
-            </div>
-        </footer>
-        </div>
-    </section>
 
-<script src="script.js"></script>
+    <footer>
+        <figure>
+            <img src="./assets/img/hacktoberfest-flower-bottom.svg">
+        </figure>
+
+        <div class="footer-map">
+            <figure><img src="./assets/img/hacktoberfest-icon-dark.svg"></figure>
+
+            <div>
+                <h4>HACKTOBERFEST 2021</h4>
+                <ul>
+                    <li><a href="#">Link-1</a></li>
+                    <li><a href="#">Link-2</a></li>
+                    <li><a href="#">Link-3</a></li>
+                    <li><a href="#">Link-4</a></li>
+                </ul>
+            </div>
+
+            <figure><img src="https://avatars.githubusercontent.com/u/50284029?s=200&v=4"></figure>
+
+            <div>
+                <h4>SRMKZILLA</h4>
+                <ul>
+                    <li><a href="#">Link-1</a></li>
+                    <li><a href="#">Link-2</a></li>
+                    <li><a href="#">Link-3</a></li>
+                    <li><a href="#">Link-4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="caption">
+            <p>
+                Crafted with ❤ by <a href="http://srmkzilla.net" target="_blank" rel="noopener noreferrer">SRMKZILLA</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
