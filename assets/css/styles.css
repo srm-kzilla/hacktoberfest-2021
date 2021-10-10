@@ -106,7 +106,7 @@ body{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 73vh;
+    top: 70vh;
     margin-top:20px;
     justify-content: center;
     width: 100vw;
@@ -178,7 +178,7 @@ body{
 /* call to action btn */
 .register-btn{
     cursor: pointer;
-    margin-top: 35px;
+    margin-top: 10px;
     background-color: var(--brightOrange);
     padding: 0.5rem;
     font-size: 1.5rem;
@@ -218,6 +218,7 @@ body{
     text-align: center;
 
 }
+
 .info-1{
     color: var(--darkOrange);
     margin-top: 5rem;
