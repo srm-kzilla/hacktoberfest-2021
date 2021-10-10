@@ -86,6 +86,8 @@ nav img {
   color: var(--brightOrange);
   text-align: center;
   margin: 0;
+  width: 70%;
+  margin: auto;
 }
 
 .sponsors {
