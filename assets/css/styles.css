@@ -10,11 +10,13 @@
 * {
   box-sizing: border-box;
 }
+html,
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--offWhite);
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 img {
   pointer-events: none;
@@ -31,7 +33,7 @@ p {
 }
 
 nav {
-  width: 100%;
+  width: 90%;
   max-width: 1024px;
   position: absolute;
   top: 0%;
@@ -47,30 +49,31 @@ nav img {
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   width: 66%;
   margin: auto;
 }
-.introContainer {
+.intro-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 4rem;
 }
-.introContainer figure {
+.intro-container figure {
   margin: 0;
   display: flex;
   justify-items: center;
   align-items: center;
   margin-top: 0.2rem;
 }
-.introContainer figure img {
+.intro-container figure img {
   width: 6rem;
   margin: auto 1.5rem;
 }
-.introContainer h2 {
+.intro-container h2 {
   color: var(--lightGreen);
   font-weight: 500;
+  text-align: center;
 }
 
 .banner {
@@ -115,7 +118,7 @@ nav img {
   align-items: center;
   margin-top: 0.4rem;
 }
-.sponsors img {
+.sponsors div a img {
   width: 100%;
   max-width: 140px;
   margin: auto;
@@ -127,7 +130,7 @@ nav img {
 
 .sponsors button {
   cursor: pointer;
-  margin-top: 8px;
+  margin: 1rem auto;
   background-color: var(--brightOrange);
   font-size: 1.5rem;
   border: none;
@@ -135,14 +138,13 @@ nav img {
   padding: 0.7rem 1.5rem;
   color: var(--offWhite);
   transition: box-shadow 0.3s;
-  margin-top: 2rem;
 }
 .sponsors button:hover {
   box-shadow: 10px 10px 20px rgba(33, 33, 33, 0.2);
 }
 
 .info {
-  height: 100vh;
+  min-height: 100vh;
   background: var(--greyishGreen);
   display: flex;
   justify-content: center;
@@ -169,7 +171,7 @@ nav img {
 }
 
 .form {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--brown);
   display: flex;
   justify-content: center;
@@ -209,7 +211,7 @@ footer > figure {
 }
 .footer-map div h4 {
   font-size: 1.2rem;
-  color: #b53a25;
+  color: var(--darkOrange);
   margin-bottom: 35px;
   font-weight: bold;
   position: relative;
@@ -219,7 +221,7 @@ footer > figure {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #e91e63;
+  background-color: var(--darkOrange);
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -234,11 +236,11 @@ footer > figure {
 .footer-map div ul li a {
   font-size: 1rem;
   text-decoration: none;
-  color: #677662;
+  color: var(--greyishGreen);
   transition: all 0.3s ease;
 }
 .footer-map div ul li a:hover {
-  color: #f74700;
+  color: var(--darkOrange);
   padding-left: 8px;
 }
 .footer-col ul li:not(:last-child) {
@@ -258,4 +260,54 @@ footer > figure {
 }
 
 @media only screen and (max-width: 786px) {
+  nav {
+    width: 80%;
+  }
+  nav img {
+    width: 2.5rem;
+  }
+
+  .hero {
+    width: 95%;
+  }
+  .info-container {
+    width: 100%;
+  }
+  .intro-container figure img {
+    width: 4rem;
+  }
+
+  .banner img {
+    width: 85%;
+  }
+  .banner p {
+    width: 100%;
+  }
+
+  .sponsors div {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+  .sponsors div a img {
+    max-width: none;
+    width: 78px;
+  }
+
+  .info-container {
+    width: 95%;
+  }
+  .info-container article {
+    flex-direction: column-reverse;
+  }
+
+  .footer-map {
+    flex-direction: column;
+  }
+  .footer-map > * {
+    width: 90%;
+    margin: auto;
+  }
+  .footer-map div h4 {
+    margin-top: 18px;
+  }
 }
