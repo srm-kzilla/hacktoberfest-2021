@@ -275,10 +275,10 @@ footer > figure {
     width: 95%;
   }
   .info-container {
-    width: 100%;
+    width: 90%;
   }
   .intro-container figure img {
-    width: 4rem;
+    width: 2.5rem;
   }
 
   .banner img {
@@ -294,7 +294,10 @@ footer > figure {
   }
   .sponsors div a img {
     max-width: none;
-    width: 78px;
+    width: 58px;
+  }
+  #intel {
+    width: 24px;
   }
 
   .info-container {
