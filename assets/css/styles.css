@@ -49,6 +49,9 @@ nav img {
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   min-height: 100vh;
   width: 66%;
   margin: auto;
@@ -57,7 +60,6 @@ nav img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 4rem;
 }
 .intro-container figure {
   margin: 0;
@@ -88,18 +90,16 @@ nav img {
 .banner p {
   color: var(--brightOrange);
   text-align: center;
-  margin: 0;
   width: 70%;
   margin: auto;
 }
 
 .sponsors {
-  margin: 2rem auto auto auto;
   text-align: center;
 }
 .sponsors h3 {
   color: var(--lightGreen);
-  margin: 1rem;
+  margin-bottom: 1rem;
 }
 .sponsors div {
   display: flex;
@@ -108,7 +108,6 @@ nav img {
   background-color: var(--darkestGreen);
   border-bottom-right-radius: 2.5rem;
   padding: 1rem 0.5rem;
-  margin-bottom: 3rem;
   width: 80%;
   margin: auto;
 }
@@ -130,7 +129,7 @@ nav img {
 
 .sponsors button {
   cursor: pointer;
-  margin: 4rem auto 1rem auto;
+  margin-top: 2rem;
   background-color: var(--brightOrange);
   font-size: 1.5rem;
   border: none;
