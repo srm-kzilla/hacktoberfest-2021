@@ -177,6 +177,10 @@ nav img {
   justify-content: center;
   align-items: center;
 }
+.form > div {
+  height: 100vh;
+  width: 100%;
+}
 
 footer {
   background: #dbe8d9;
