@@ -316,4 +316,13 @@ footer > figure {
   .footer-map div h4 {
     margin-top: 18px;
   }
+  footer > figure{
+    transform:translateY(20%);
+    margin-bottom:60px;
+    height:60px;
+    width:60px;
+  }
+  #flower-up{
+    width:65%;
+  }
 }
