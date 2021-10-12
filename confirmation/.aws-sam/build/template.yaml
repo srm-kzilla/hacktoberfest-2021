@@ -1,0 +1,43 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'confirmation
+
+  Sample SAM Template for confirmation
+
+  '
+Globals:
+  Function:
+    Timeout: 3
+Resources:
+  ConfirmFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      PackageType: Image
+      Events:
+        Confirm:
+          Type: Api
+          Properties:
+            Path: /confirm
+            Method: post
+      ImageUri: confirmfunction:nodejs14.x-v1
+    Metadata:
+      DockerTag: nodejs14.x-v1
+      DockerContext: ./confirm
+      Dockerfile: Dockerfile
+Outputs:
+  ConfirmApi:
+    Description: API Gateway endpoint URL for Prod stage for Confirm function
+    Value:
+      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/
+  ConfirmFunction:
+    Description: Confirm Lambda Function ARN
+    Value:
+      Fn::GetAtt:
+      - ConfirmFunction
+      - Arn
+  ConfirmFunctionIamRole:
+    Description: Implicit IAM Role created for Confirm function
+    Value:
+      Fn::GetAtt:
+      - ConfirmFunctionRole
+      - Arn
