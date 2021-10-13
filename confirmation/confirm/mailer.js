@@ -1,12 +1,11 @@
-import { Credentials, SESV2 } from 'aws-sdk';
-import config from './config';
+const { Credentials, SESV2 } = require('aws-sdk');
 
 const ses = new SESV2({
     apiVersion: '2019-09-27',
     region: 'ap-south-1',
     credentials: new Credentials({
-        accessKeyId: config.accessKey,
-        secretAccessKey: config.secretAccessKey,
+        accessKeyId: process.env.ACCESS_KEY_ID,
+        secretAccessKey: process.env.ACCESS_KEY_SECRET,
     }),
 });
 
@@ -15,7 +14,7 @@ const ses = new SESV2({
  * @param mail Mail Body from createSesMail
  * @returns {Object}
  */
-export const sendEmail = (mail) => {
+const sendEmail = (mail) => {
     let request = ses.sendEmail(mail);
     return request.promise();
 };
@@ -27,7 +26,7 @@ export const sendEmail = (mail) => {
  * @param {string} subject Mail Subject
  * @returns {Object}
  */
-export const createSesMail = (
+const createSesMail = (
     html,
     text,
     subject,
@@ -53,8 +52,13 @@ export const createSesMail = (
         Destination: {
             ToAddresses: [receiverEmail],
         },
-        ReplyToAddresses: [`${config.replyToAddress}`],
+        ReplyToAddresses: [`${process.env.REPLY_TO_ADDRESS}`],
         FromEmailAddress: fromEmail,
     };
     return mail;
 };
+
+module.exports = {
+    sendEmail,
+    createSesMail
+}

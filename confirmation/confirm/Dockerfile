@@ -1,6 +1,6 @@
 FROM public.ecr.aws/lambda/nodejs:14
 
-COPY app.js package.json mailer.js template.js ./templates/confirm.html ./
+COPY app.js package.json mailer.js template.js confirm.html .env ./
 
 RUN npm install
 
