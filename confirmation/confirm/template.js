@@ -1,7 +1,6 @@
-import config from "./config";
-import * as fs from 'fs';
-import * as path from 'path';
-import dot from 'dot';
+const fs = require('fs');
+const path = require('path');
+const dot = require('dot');
 
 /**
  * @param {string} email Email to send to
@@ -10,7 +9,11 @@ import dot from 'dot';
  * @param {string|'Seat Confirmed'} text Text
  * @param {string|'Your journey to Open Source greatness has started'} subject Mail Subject
  */
-export function getStaticMail(email, emailFrom, fileName, text = 'Seat Confirmed', subject = 'Your journey to Open Source greatness has started') {
-    const template = dot.template(fs.readFileSync(path.join(process.cwd(), `/services/templates/${fileName}.html`), 'utf-8'));
-    return createSesMail(template(), text, subject, email, `${emailFrom}@${config.domain}`)
+function getStaticMail(email, emailFrom, fileName, text = 'Seat Confirmed', subject = 'Your journey to Open Source greatness has started') {
+    console.log(__dirname);
+    const template = dot.template(fs.readFileSync(`./templates/${fileName}.html`, 'utf-8'));
+    return createSesMail(template(), text, subject, email, `${emailFrom}@${process.env.DOMAIN}`)
+}
+module.exports = {
+    getStaticMail
 }

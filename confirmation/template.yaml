@@ -22,6 +22,17 @@ Resources:
             Path: /confirm
             Method: post
     Metadata:
+      AWS::ServerlessRepo::Application:
+        Name: confirm
+        Description: confirm route
+        Author: user1
+        SpdxLicenseId: Apache-2.0
+        LicenseUrl: LICENSE.txt
+        ReadmeUrl: README.md
+        Labels: ['tests']
+        HomePageUrl: https://github.com/srm-kzilla/hacktoberfest-2021
+        SemanticVersion: 0.0.1
+        SourceCodeUrl: https://github.com/srm-kzilla/hacktoberfest-2021
       DockerTag: nodejs14.x-v1
       DockerContext: ./confirm
       Dockerfile: Dockerfile
