@@ -278,6 +278,9 @@ footer > figure {
   .hero {
     width: 95%;
   }
+  .info {
+    padding-bottom: 2rem;
+  }
   .info-container {
     width: 90%;
   }
@@ -309,6 +312,9 @@ footer > figure {
     width: 95%;
   }
   .info-container article {
+    flex-direction: column;
+  }
+  .info-container article:nth-child(1) {
     flex-direction: column-reverse;
   }
 
