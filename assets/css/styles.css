@@ -1,11 +1,12 @@
 :root {
-  --brightOrange: #f74700;
-  --darkOrange: #b53a25;
+  --red-orange-color-wheel: #f74700;
+  --orange-golden-bridge: #b53a25;
   --offWhite: #f3f0e0;
-  --brown: #a88771;
-  --lightGreen: #91a88c;
-  --greyishGreen: #677662;
-  --darkestGreen: #2b3531;
+  --beaver: #a88771;
+  --morning-blue: #91a88c;
+  --xanadu: #677662;
+  --charleston-green: #2b3531;
+  --honeydew: #dbe7d9;
 }
 * {
   box-sizing: border-box;
@@ -35,23 +36,25 @@ p {
 nav {
   width: 90%;
   max-width: 1024px;
-  position: absolute;
-  top: 0%;
-  left: 0;
-  right: 0;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin: auto;
-  padding-top: 1rem;
+  margin: 1rem auto;
 }
-nav img {
-  width: 4rem;
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 86px;
+}
+nav a img {
+  width: 100%;
 }
 
 .hero {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   min-height: 100vh;
   width: 66%;
   margin: auto;
@@ -60,7 +63,6 @@ nav img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -3rem;
 }
 .intro-container figure {
   margin: 0;
@@ -74,7 +76,7 @@ nav img {
   margin: auto 1.5rem;
 }
 .intro-container h2 {
-  color: var(--lightGreen);
+  color: var(--morning-blue);
   font-weight: 500;
   text-align: center;
 }
@@ -89,28 +91,47 @@ nav img {
   margin: auto;
 }
 .banner p {
-  color: var(--brightOrange);
+  color: var(--orange-golden-bridge);
   text-align: center;
-  width: 70%;
+  width: 80%;
   margin: auto;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+}
+.register-container button {
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 2rem auto;
+  background-color: var(--red-orange-color-wheel);
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem 3rem;
+  color: white;
+  transition: box-shadow 0.3s;
+  font-weight: 700;
+}
+.register-container button:hover {
+  box-shadow: 0px 15px 20px rgba(33, 33, 33, 0.2);
 }
 
 .sponsors {
   text-align: center;
+  padding-bottom: 2rem;
 }
 .sponsors h3 {
-  color: var(--lightGreen);
-  margin-bottom: 1rem;
-  font-weight: 500;
+  color: var(--morning-blue);
+  font-weight: 700;
 }
 .sponsors div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  background-color: var(--darkestGreen);
-  border-radius: 0 2.5rem 0 2.5rem;
-  padding: 1rem 0.5rem;
-  width: 80%;
+  width: 50%;
   margin: auto;
 }
 .sponsors div a {
@@ -129,54 +150,43 @@ nav img {
   width: 48px;
 }
 
-.sponsors button {
-  cursor: pointer;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  background-color: var(--brightOrange);
-  font-size: 1rem;
-  border: none;
-  border-radius: 2rem;
-  padding: 0.7rem 1.5rem;
-  color: var(--offWhite);
-  transition: box-shadow 0.3s;
-  font-weight: 700;
-}
-
-.sponsors button:hover {
-  box-shadow: 0px 15px 20px rgba(33, 33, 33, 0.2);
-}
-
 .info {
   min-height: 100vh;
-  background: var(--greyishGreen);
+  background: var(--honeydew);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .info-container {
-  width: 66%;
+  width: 80%;
   height: 100%;
   margin: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
-.info-container article {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  text-align: justify;
+.info-container div {
+  margin-right: 5rem;
+  max-width: 45%;
 }
-.info-container article p {
-  margin: auto 2rem;
+.info-container div h1 {
+  font-size: 3rem;
+}
+.info-container div p {
+  margin-top: 2rem;
+}
+.info-container figure {
+  margin: 0;
+  height: 100vh;
+}
+.info-container figure img {
+  height: 100%;
 }
 
 .form {
   min-height: 100vh;
-  background-color: var(--brown);
+  background-color: var(--beaver);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,6 +209,10 @@ footer > figure {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+}
+footer > figure img {
+  width: 100%;
 }
 .footer-map {
   display: flex;
@@ -219,7 +233,7 @@ footer > figure {
 }
 .footer-map div h4 {
   font-size: 1.2rem;
-  color: var(--darkOrange);
+  color: var(--orange-golden-bridge);
   margin-bottom: 35px;
   font-weight: bold;
   position: relative;
@@ -229,7 +243,7 @@ footer > figure {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: var(--darkOrange);
+  background-color: var(--orange-golden-bridge);
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -244,11 +258,11 @@ footer > figure {
 .footer-map div ul li a {
   font-size: 1rem;
   text-decoration: none;
-  color: var(--greyishGreen);
+  color: var(--xanadu);
   transition: all 0.3s ease;
 }
 .footer-map div ul li a:hover {
-  color: var(--darkOrange);
+  color: var(--orange-golden-bridge);
   padding-left: 8px;
 }
 .footer-col ul li:not(:last-child) {
@@ -271,18 +285,12 @@ footer > figure {
   nav {
     width: 80%;
   }
-  nav img {
-    width: 2.5rem;
+  nav a {
+    width: 36px;
   }
 
   .hero {
     width: 95%;
-  }
-  .info {
-    padding-bottom: 2rem;
-  }
-  .info-container {
-    width: 90%;
   }
   .intro-container figure img {
     width: 2.5rem;
@@ -293,6 +301,12 @@ footer > figure {
   }
   .banner p {
     width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .register-container button {
+    font-size: 1rem;
+    padding: 0.5rem 2.5rem;
   }
 
   .sponsors div {
@@ -301,21 +315,26 @@ footer > figure {
     border-radius: 0 1rem 0 1rem;
   }
   .sponsors div a img {
-    max-width: none;
-    width: 58px;
+    width: 78px;
   }
   #intel {
     width: 24px;
   }
 
+  .info {
+    padding-bottom: 2rem;
+  }
   .info-container {
-    width: 95%;
+    width: 90%;
   }
-  .info-container article {
-    flex-direction: column;
+  .info-container div {
+    max-width: 100%;
   }
-  .info-container article:nth-child(1) {
-    flex-direction: column-reverse;
+  .info-container div h1 {
+    font-size: 1.7rem;
+  }
+  .info-container figure {
+    display: none;
   }
 
   .footer-map {
@@ -333,16 +352,14 @@ footer > figure {
     margin-bottom: 60px;
     height: 60px;
     width: 60px;
+    padding: 0.5rem;
   }
-  #flower-up {
-    width: 65%;
+
+  .intro-container {
+    margin-top: 2rem;
   }
   .intro-container h2 {
     font-size: 1.3rem;
     line-height: 1.5rem;
-  }
-  .intro-container {
-    margin-top: 2rem;
-    margin-bottom: -1rem;
   }
 }
