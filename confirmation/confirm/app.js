@@ -22,7 +22,7 @@ exports.lambdaHandler = async(event, context) => {
         await sendEmail(
             getStaticMail(
                 email,
-                "skilltober",
+                "hacktoberfest",
                 "confirm"
             )
         );
