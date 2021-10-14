@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const dot = require('dot');
+const { createSesMail } = require('./mailer');
 
 /**
  * @param {string} email Email to send to
@@ -10,8 +11,7 @@ const dot = require('dot');
  * @param {string|'Your journey to Open Source greatness has started'} subject Mail Subject
  */
 function getStaticMail(email, emailFrom, fileName, text = 'Seat Confirmed', subject = 'Your journey to Open Source greatness has started') {
-    console.log(__dirname);
-    const template = dot.template(fs.readFileSync(`./templates/${fileName}.html`, 'utf-8'));
+    const template = dot.template(fs.readFileSync(`./${fileName}.html`, 'utf-8'));
     return createSesMail(template(), text, subject, email, `${emailFrom}@${process.env.DOMAIN}`)
 }
 module.exports = {

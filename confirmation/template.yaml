@@ -14,6 +14,12 @@ Resources:
   ConfirmFunction:
     Type: AWS::Serverless::Function
     Properties:
+      Environment:
+        Variables:
+          ACCESS_KEY_ID: string
+          ACCESS_KEY_SECRET: string
+          DOMAIN: string
+          REPLY_TO_ADDRESS: string
       PackageType: Image
       Events:
         Confirm:

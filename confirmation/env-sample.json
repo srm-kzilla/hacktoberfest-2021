@@ -1,0 +1,8 @@
+{
+    "Parameters": {
+        "ACCESS_KEY_ID": "<SES Access Key ID>",
+        "ACCESS_KEY_SECRET": "<SES Access Key Secret>",
+        "DOMAIN": "<DOMAIN>",
+        "REPLY_TO_ADDRESS": "<REPLY To EMAIL ADRESS>"
+    }
+}
