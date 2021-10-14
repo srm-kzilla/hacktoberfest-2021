@@ -60,6 +60,7 @@ nav img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: -3rem;
 }
 .intro-container figure {
   margin: 0;
@@ -100,13 +101,14 @@ nav img {
 .sponsors h3 {
   color: var(--lightGreen);
   margin-bottom: 1rem;
+  font-weight: 500;
 }
 .sponsors div {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: var(--darkestGreen);
-  border-bottom-right-radius: 2.5rem;
+  border-radius: 0 2.5rem 0 2.5rem;
   padding: 1rem 0.5rem;
   width: 80%;
   margin: auto;
@@ -130,16 +132,19 @@ nav img {
 .sponsors button {
   cursor: pointer;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   background-color: var(--brightOrange);
-  font-size: 1.5rem;
+  font-size: 1rem;
   border: none;
   border-radius: 2rem;
   padding: 0.7rem 1.5rem;
   color: var(--offWhite);
   transition: box-shadow 0.3s;
+  font-weight: 700;
 }
+
 .sponsors button:hover {
-  box-shadow: 10px 10px 20px rgba(33, 33, 33, 0.2);
+  box-shadow: 0px 15px 20px rgba(33, 33, 33, 0.2);
 }
 
 .info {
@@ -290,6 +295,7 @@ footer > figure {
   .sponsors div {
     width: 100%;
     padding: 0.5rem 1rem;
+    border-radius: 0 1rem 0 1rem;
   }
   .sponsors div a img {
     max-width: none;
@@ -316,13 +322,21 @@ footer > figure {
   .footer-map div h4 {
     margin-top: 18px;
   }
-  footer > figure{
-    transform:translateY(20%);
-    margin-bottom:60px;
-    height:60px;
-    width:60px;
+  footer > figure {
+    transform: translateY(20%);
+    margin-bottom: 60px;
+    height: 60px;
+    width: 60px;
   }
-  #flower-up{
-    width:65%;
+  #flower-up {
+    width: 65%;
+  }
+  .intro-container h2 {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  .intro-container {
+    margin-top: 2rem;
+    margin-bottom: -1rem;
   }
 }
