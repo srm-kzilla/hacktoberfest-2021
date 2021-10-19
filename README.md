@@ -1,7 +1,7 @@
 # Hacktoberfest'21 with SRMKZILLA
 
 <div align="center">
-  ![img](./assests/img/hacktoberfest.png)
+  ![img](assests/img/hacktoberfest.png)
 </div>
 <p align="center">
 crafted with <span style="color: #DE6C5E;">&hearts;</span> by your friends on the <a href="https://srmkzilla.net">SRMKZILLA</a> team
