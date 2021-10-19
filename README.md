@@ -1,8 +1,9 @@
 # Hacktoberfest'21 with SRMKZILLA
 
 <div align="center">
-  <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg" style="width:50%">
+  <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg" style="width:70%">
 </div>
+<br>
 <p align="center">
 crafted with <span style="color: #DE6C5E;">&hearts;</span> by your friends on the <a href="https://srmkzilla.net">SRMKZILLA</a> team
 </p>
