@@ -1,7 +1,7 @@
 # Hacktoberfest'21 with SRMKZILLA
 
 <div align="center">
-  <img alt="logo" src="./assests/img/hacktoberfest.svg" height="120" />
+  <img alt="logo" src="https://hacktoberfest.digitalocean.com/" height="120" />
 </div>
 <p align="center">
 crafted with <span style="color: #DE6C5E;">&hearts;</span> by your friends on the <a href="https://srmkzilla.net">SRMKZILLA</a> team
