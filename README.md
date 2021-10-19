@@ -29,7 +29,7 @@ Welcoming you all to **Hacktoberfest'21**- the month long celebration of open so
 - Check out  `contributing.md` 
 - Check issues tab. ( Tip: check for issues tagged as `good first issue` or `hacktoberfest` )
 - Solve the issue and create a pull request
-- Checkout our <a href="https://github.com/srm-kzilla"> github profile</a> for exiciting repositories
+- Checkout our <a href="https://github.com/srm-kzilla"> github profile</a> for exciting repositories
 
 ## Resources 📚
 - <a href="https://github.com/mungell/awesome-for-beginners"> Awesome First PR Opportunities<a>
